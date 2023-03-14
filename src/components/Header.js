@@ -6,21 +6,17 @@ import TextField from '@mui/material/TextField';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 
-function Header({ selectProduct, searchResults }) {
+function Header({ handleShowDialog, searchResults, products }) {
 
   const [searchString, setSearchString] = useState(null);
   const [results, setResults] = useState([]);
-
-  const products = [
-    { image: 'https://picsum.photos/200', title: 'T-shirt', description: 'En t-shirt', price: 200, rating: 4 },
-    { image: 'https://picsum.photos/200', title: 'Jacka', description: 'En jacka', price: 100, rating: 2 },
-  ];
-
+  const [showResultList, setShowResultList] = useState(false);
+  // Kör handleShowDialog i parent komponent för att visa en produkt.
   const handleProductClick = (product) => {
-    selectProduct(product);
-    console.log('Selected product:', product);
+    handleShowDialog(product);
+    setShowResultList(false);
   };
-
+  // Kolla om en söksträng hittas i arrayen med produkter.
   const productMatch = (search) => {
     setSearchString(search);
     if (search.length > 2) {
@@ -28,30 +24,42 @@ function Header({ selectProduct, searchResults }) {
         product.title.toLowerCase().includes(search.toString().toLowerCase())
       );
       setResults(result);
-      console.log(results);
     } else {
       setResults([]);
     }
   }
-
+  // Visa sökresultaten.
   const showResults = () => {
     searchResults(results);
-    console.log("Sökresultat");
-    console.log(results);
+    setShowResultList(false);
   }
 
   return (
     <AppBar position="static" sx={{ backgroundColor: "#414141" }}>
       <Toolbar>
-        <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-          Min Header
+        <Typography variant="h4" component="div" sx={{ flexGrow: 1 }}>
+          The Magic Store
         </Typography>
         <Box sx={{ position: "relative" }}>
-          <TextField sx={{ backgroundColor: "#FFFFFF", position: "relative", width: "400px" }} onChange={(e) => productMatch(e.target.value)} />
-          {results.length > 0 &&
-            <Box sx={{ position: "absolute", top: 70, left: 0, zIndex: 1, backgroundColor: "#717171", width: "100%", boxSizing: "border-box" }}>
-              {results?.length > 0 && results.map((result, index) => {
-                return <li key={index} onClick={() => handleProductClick(result)}>{result.title}</li>
+          <TextField sx={{ backgroundColor: "#FFFFFF", position: "relative", width: "400px" }} onChange={(e) => productMatch(e.target.value)} onFocus={() => setShowResultList(true)} />
+          {showResultList && results.length > 0 &&
+            <Box sx={{ position: "absolute", top: 70, left: 0, zIndex: 1, backgroundColor: "#414141", width: "100%", boxSizing: "border-box" }}>
+              {results?.length > 0 && results.sort((a, b) => b.popularity - a.popularity).slice(0, 3).map((result, index) => {
+                return <li key={index} onClick={() => handleProductClick(result.id)}>
+                  <div class="searchDropdown">
+                    <div>
+                      <img src={result.image} alt=""></img>
+                    </div>
+                    <div className="dropdownProduct">
+                      <div className="dropdownHeader">
+                        <span>{result.title}</span>
+                        <span>{result.price} kr</span>
+                      </div>
+                      <div>
+                        <span>Rating: {result.rating}</span>
+                      </div>
+                    </div>
+                  </div></li>
               })}
             </Box>
           }

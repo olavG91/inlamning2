@@ -30,7 +30,8 @@ li:hover {
 
 .searchResult {
   padding: 10px;
-  background-color: antiquewhite;
+  background-color: #d3ecff;
+  margin-bottom: 10px;
 }
 
 .searchRow {
@@ -42,11 +43,13 @@ li:hover {
   display: flex;
   justify-content: space-between;
   padding: 20px;
-  gap: 100px;
+  gap: 20px;
 }
 
 .shoppingCart {
   width: 400px;
+  background-color: #f0f0f0;
+  padding: 20px;
 }
 
 .cartItem {
@@ -55,15 +58,55 @@ li:hover {
   gap: 20px;
   height: 100px;
   margin-top: 20px;
+  background-color: #FFFFFF;
+  padding: 10px;
 }
 
 .cartItem img {
   width: 100px;
 }
 
+.productItem {
+  width: 100%;
+}
+
 .productDetails {
   display: flex;
+  justify-content: space-between;
   gap: 10px;
+}
+
+.productHeader {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.searchDropdown {
+  display: flex;
+  gap: 10px;
+}
+
+.searchDropdown img {
+  width: 100px;
+}
+
+.dropdownProduct {
+  width: 100%;
+}
+
+.dropdownHeader {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cartTotal {
+  margin-top: 10px;
+}
+
+.productDisplay {
+  display: flex;
+  gap: 20px;
 }
 
 h3 {

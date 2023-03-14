@@ -1,0 +1,203 @@
+[
+  {
+    "id": 1,
+    "image": "https://picsum.photos/200?random=1",
+    "title": "T-shirt",
+    "description": "En bekväm t-shirt i 100% bomull, perfekt för avslappnade tillfällen.",
+    "price": 199,
+    "rating": 4.5,
+    "popularity": 0,
+    "ratingCount": 0
+  },
+  {
+    "id": 2,
+    "image": "https://picsum.photos/200?random=2",
+    "title": "Träningsbyxor",
+    "description": "Mjuka träningsbyxor i stretchigt material som ger optimal rörelsefrihet.",
+    "price": 399,
+    "rating": 4.2,
+    "popularity": 0,
+    "ratingCount": 0
+  },
+  {
+    "id": 3,
+    "image": "https://picsum.photos/200?random=3",
+    "title": "Hoodie",
+    "description": "En skön hoodie med mjuk frotté på insidan. Perfekt för svala dagar.",
+    "price": 549,
+    "rating": 4.7,
+    "popularity": 0,
+    "ratingCount": 0
+  },
+  {
+    "id": 4,
+    "image": "https://picsum.photos/200?random=4",
+    "title": "Jeans",
+    "description": "Snygga och bekväma jeans i stretchigt material som följer kroppens kurvor.",
+    "price": 799,
+    "rating": 4.4,
+    "popularity": 0,
+    "ratingCount": 0
+  },
+  {
+    "id": 5,
+    "image": "https://picsum.photos/200?random=5",
+    "title": "Skjorta",
+    "description": "En klassisk skjorta i mjukt och behagligt material. Passar både till jobbet och till fritidsaktiviteter.",
+    "price": 499,
+    "rating": 4.6,
+    "popularity": 0,
+    "ratingCount": 0
+  },
+  {
+    "id": 6,
+    "image": "https://picsum.photos/200?random=6",
+    "title": "Kjol",
+    "description": "En snygg kjol med hög midja och volangdetaljer. Perfekt för festliga tillfällen.",
+    "price": 599,
+    "rating": 4.3,
+    "popularity": 0,
+    "ratingCount": 0
+  },
+  {
+    "id": 7,
+    "image": "https://picsum.photos/200?random=7",
+    "title": "Vinterjacka",
+    "description": "En varm och skön vinterjacka med mjukt foder och avtagbar huva.",
+    "price": 1299,
+    "rating": 4.8,
+    "popularity": 0,
+    "ratingCount": 0
+  },
+  {
+    "id": 8,
+    "image": "https://picsum.photos/200?random=8",
+    "title": "Träningslinne",
+    "description": "Ett bekvämt träningslinne i snabbtorkande material. Perfekt för intensiva träningspass.",
+    "price": 149,
+    "rating": 4.1,
+    "popularity": 0,
+    "ratingCount": 0
+  },
+  {
+    "id": 9,
+    "image": "https://picsum.photos/200?random=9",
+    "title": "Joggingbyxor",
+    "description": "Mjuka joggingbyxor med resår i midjan och bensluten. Perfekt för avslappnade dagar hemma.",
+    "price": 299,
+    "rating": 4.0,
+    "popularity": 0,
+    "ratingCount": 0
+  },
+  {
+    "id": 10,
+    "image": "https://picsum.photos/200?random=10",
+    "title": "Stickad tröja",
+    "description": "En varm och mjuk stickad tröja i härlig ullblandning. Perfekt för höst- och vinterdagarna.",
+    "price": 799,
+    "rating": 4.9,
+    "popularity": 0,
+    "ratingCount": 0
+  },
+  {
+    "id": 11,
+    "image": "https://picsum.photos/200?random=11",
+    "title": "Shorts",
+    "description": "Luftiga shorts i bekvämt material som passar perfekt för sommardagar.",
+    "price": 249,
+    "rating": 4.2,
+    "popularity": 0,
+    "ratingCount": 0
+  },
+  {
+    "id": 12,
+    "image": "https://picsum.photos/200?random=12",
+    "title": "Kavaj",
+    "description": "En stilren kavaj i klassisk design. Perfekt för både jobb och fest.",
+    "price": 899,
+    "rating": 4.7,
+    "popularity": 0,
+    "ratingCount": 0
+  },
+  {
+    "id": 13,
+    "image": "https://picsum.photos/200?random=13",
+    "title": "T-shirt med tryck",
+    "description": "En snygg t-shirt med häftigt tryck. Perfekt för att addera lite extra stil till din outfit.",
+    "price": 199,
+    "rating": 4.4,
+    "popularity": 0,
+    "ratingCount": 0
+  },
+  {
+    "id": 14,
+    "image": "https://picsum.photos/200?random=14",
+    "title": "Solglasögon",
+    "description": "Ett par snygga solglasögon som skyddar dina ögon från solens strålar samtidigt som de adderar stil till din outfit.",
+    "price": 299,
+    "rating": 4.5,
+    "popularity": 0,
+    "ratingCount": 0
+  },
+  {
+    "id": 15,
+    "image": "https://picsum.photos/200?random=15",
+    "title": "Bomberjacka",
+    "description": "En cool bomberjacka med snygga detaljer. Perfekt för att addera lite extra edge till din outfit.",
+    "price": 699,
+    "rating": 4.3,
+    "popularity": 0,
+    "ratingCount": 0
+  },
+  {
+    "id": 16,
+    "image": "https://picsum.photos/200?random=16",
+    "title": "T-shirt med knappar",
+    "description": "En snygg t-shirt med knappar längs halsringningen. Perfekt för att addera lite extra stil till din outfit.",
+    "price": 249,
+    "rating": 4.1,
+    "popularity": 0,
+    "ratingCount": 0
+  },
+
+  {
+    "id": 17,
+    "image": "https://picsum.photos/200?random=17",
+    "title": "Höga sneakers",
+    "description": "Trendiga höga sneakers i mjukt material med snygga detaljer. Perfekt för att addera lite extra stil till din outfit.",
+    "price": 899,
+    "rating": 4.6,
+    "popularity": 0,
+    "ratingCount": 0
+  },
+  {
+    "id": 18,
+    "image": "https://picsum.photos/200?random=18",
+    "title": "Mössa",
+    "description": "En varm och mjuk mössa som håller ditt huvud varmt under kalla vinterdagar.",
+    "price": 99,
+    "rating": 4.0,
+    "popularity": 0,
+    "ratingCount": 0
+  },
+  {
+    "id": 19,
+    "image": "https://picsum.photos/200?random=19",
+    "title": "Chinos",
+    "description": "Snygga chinos i mjukt och bekvämt material som passar perfekt för både jobb och fritid.",
+    "price": 599,
+    "rating": 4.4,
+    "popularity": 0,
+    "ratingCount": 0
+  },
+  {
+    "id": 20,
+    "image": "https://picsum.photos/200?random=20",
+    "title": "Läderjacka",
+    "description": "En klassisk läderjacka som aldrig går ur stil. Perfekt för att addera lite extra edge till din outfit.",
+    "price": 1999,
+    "rating": 4.8,
+    "popularity": 0,
+    "ratingCount": 0
+  }
+]

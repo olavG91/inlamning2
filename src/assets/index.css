@@ -23,3 +23,50 @@ li:hover {
   color: #000000;
   cursor: pointer;
 }
+
+.searchResults {
+  width: 100%;
+}
+
+.searchResult {
+  padding: 10px;
+  background-color: antiquewhite;
+}
+
+.searchRow {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  gap: 100px;
+}
+
+.shoppingCart {
+  width: 400px;
+}
+
+.cartItem {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  height: 100px;
+  margin-top: 20px;
+}
+
+.cartItem img {
+  width: 100px;
+}
+
+.productDetails {
+  display: flex;
+  gap: 10px;
+}
+
+h3 {
+  padding: 0;
+  margin: 0;
+}

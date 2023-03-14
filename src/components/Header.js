@@ -12,8 +12,8 @@ function Header({ selectProduct, searchResults }) {
   const [results, setResults] = useState([]);
 
   const products = [
-    { title: 'T-shirt', description: 'En t-shirt' },
-    { title: 'Jacka', description: 'En jacka' },
+    { image: 'https://picsum.photos/200', title: 'T-shirt', description: 'En t-shirt', price: 200, rating: 4 },
+    { image: 'https://picsum.photos/200', title: 'Jacka', description: 'En jacka', price: 100, rating: 2 },
   ];
 
   const handleProductClick = (product) => {
@@ -28,7 +28,6 @@ function Header({ selectProduct, searchResults }) {
         product.title.toLowerCase().includes(search.toString().toLowerCase())
       );
       setResults(result);
-      searchResults(results);
       console.log(results);
     } else {
       setResults([]);
@@ -37,6 +36,8 @@ function Header({ selectProduct, searchResults }) {
 
   const showResults = () => {
     searchResults(results);
+    console.log("Sökresultat");
+    console.log(results);
   }
 
   return (

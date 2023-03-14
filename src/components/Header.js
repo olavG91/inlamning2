@@ -4,8 +4,9 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import TextField from '@mui/material/TextField';
 import Box from '@mui/material/Box';
+import Button from '@mui/material/Button';
 
-function Header() {
+function Header({ selectProduct, searchResults }) {
 
   const [searchString, setSearchString] = useState(null);
   const [results, setResults] = useState([]);
@@ -16,8 +17,8 @@ function Header() {
   ];
 
   const handleProductClick = (product) => {
+    selectProduct(product);
     console.log('Selected product:', product);
-    // Här kan du lägga till din egen funktion som hanterar det valda objektet.
   };
 
   const productMatch = (search) => {
@@ -27,14 +28,19 @@ function Header() {
         product.title.toLowerCase().includes(search.toString().toLowerCase())
       );
       setResults(result);
+      searchResults(results);
       console.log(results);
     } else {
       setResults([]);
     }
   }
 
+  const showResults = () => {
+    searchResults(results);
+  }
+
   return (
-    <AppBar position="static">
+    <AppBar position="static" sx={{ backgroundColor: "#414141" }}>
       <Toolbar>
         <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
           Min Header
@@ -44,11 +50,12 @@ function Header() {
           {results.length > 0 &&
             <Box sx={{ position: "absolute", top: 70, left: 0, zIndex: 1, backgroundColor: "#717171", width: "100%", boxSizing: "border-box" }}>
               {results?.length > 0 && results.map((result, index) => {
-                return <li key={index}>{result.title}</li>
+                return <li key={index} onClick={() => handleProductClick(result)}>{result.title}</li>
               })}
             </Box>
           }
         </Box>
+        <Button variant="contained" sx={{ ml: 2 }} onClick={showResults}>Sök</Button>
       </Toolbar>
     </AppBar>
   );
